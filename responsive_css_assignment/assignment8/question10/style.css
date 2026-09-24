@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.card img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #3498db;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #3498db;
+    outline-offset: 2px;
+    border-color: #3498db;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 11px 25px;
+    border: 2px solid #3498db;
+    border-radius: 7px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+}

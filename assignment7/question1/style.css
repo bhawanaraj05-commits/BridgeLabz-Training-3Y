@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Main section */
+main {
+    padding: 50px 20px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+    width: 200px;
+    min-height: 160px;
+    background-color: white;
+    text-align: center;
+
+    /* Smooth border transition */
+    transition: border-color 0.3s ease;
+}
+
+/* Different border styles and padding */
+
+.solid {
+    border: 5px solid black;
+    padding: 20px;
+}
+
+.dashed {
+    border: 5px dashed black;
+    padding: 25px;
+}
+
+.double {
+    border: 8px double black;
+    padding: 15px;
+}
+
+.groove {
+    border: 8px groove black;
+    padding: 30px;
+}
+
+/* Rounded corners */
+.solid {
+    border-radius: 10px;
+}
+
+.dashed {
+    border-radius: 20px;
+}
+
+.double {
+    border-radius: 30px;
+}
+
+.groove {
+    border-radius: 40px;
+}
+
+/* Hover effect */
+.box:hover {
+    border-color: red;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}

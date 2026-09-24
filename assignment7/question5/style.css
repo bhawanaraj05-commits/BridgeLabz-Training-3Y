@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    padding: 30px;
+}
+
+/* =========================
+   ATTRIBUTE SELECTORS
+   ========================= */
+
+/* Selects input elements with type="text" */
+input[type="text"] {
+    border: 3px solid blue;
+}
+
+/* Selects links whose href starts with "https" */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* =========================
+   PSEUDO-CLASSES
+   ========================= */
+
+/* :hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* :focus */
+input:focus {
+    outline: 3px solid orange;
+}
+
+/* :nth-child() */
+li:nth-child(odd) {
+    background-color: #ddd;
+}
+
+
+/* =========================
+   PSEUDO-ELEMENTS
+   ========================= */
+
+/* ::before */
+h2::before {
+    content: "★ ";
+}
+
+/* ::after */
+h2::after {
+    content: " ✓";
+}
+
+
+/* =========================
+   COMBINATORS
+   ========================= */
+
+/* Child combinator (>) */
+.items > h2 {
+    color: purple;
+}
+
+/* Descendant combinator */
+.items li {
+    padding: 8px;
+}
+
+/* Adjacent sibling (+) */
+button + p {
+    color: red;
+}
+
+/* General sibling (~) */
+input ~ button {
+    margin-top: 15px;
+}
+
+
+/* Common styling */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+a {
+    display: block;
+    margin: 12px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 12px 0;
+}
+
+button {
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}

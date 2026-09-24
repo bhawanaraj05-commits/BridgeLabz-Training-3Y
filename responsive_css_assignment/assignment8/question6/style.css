@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #333;
+    color: white;
+}
+
+.animations {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.animation-box {
+    width: 220px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.moving-box {
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    animation: moveBox 2s ease-in-out infinite alternate;
+}
+
+.ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.changing-text {
+    animation: changeColor 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-40px);
+    }
+
+    to {
+        transform: translateX(40px);
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(30px);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes changeColor {
+    from {
+        color: #3498db;
+    }
+
+    to {
+        color: #e74c3c;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
