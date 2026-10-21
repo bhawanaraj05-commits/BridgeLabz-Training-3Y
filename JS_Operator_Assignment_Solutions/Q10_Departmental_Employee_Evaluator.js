@@ -1,4 +1,4 @@
-// Q10: Departmental Employee Evaluator
+ // Q10: Departmental Employee Evaluator
 // Give each department a performance label based on its score.
 
 const departments = [
