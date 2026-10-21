@@ -1,0 +1,68 @@
+// let category="Action"
+
+// switch(category){
+//     case "Action":
+//         console.log("this is action movie..")
+//         break
+//     case "Comedy":
+//         console.log("this is comedy movie..")
+//         break
+//     case "Drama":
+//         console.log("this is Drama movie..")   
+//         break
+        
+//         default:
+//             console.log("No category is selected")
+
+
+// }
+
+// var i=0
+
+// for(var i=5;i<10;i++){
+//     console.log("this is inside block console",i)
+// }
+
+// console.log("this is outside block console",i)
+
+// let branch=["CSE", "IT", "ECE"]
+
+// branch.newBranch= "AIML"
+
+// for(const b in branch){
+//     console.log(b);   //it iterates over object keys
+// }
+
+// for(const b of branch){
+//     console.log(b);   // //it iterates over object value
+// }
+
+
+
+let student = {
+    name: "Bhawana",
+    age: 20,
+    university: "GLA University",
+    rollno: 123,
+    add: {
+        city: "Mathura",
+        state: "UP"
+    },
+    sub: ["Java", "HTML", "CSS"]
+};
+
+for (let i = 0; i < 3; i++) {
+    console.log(student.sub[i]);
+}
+
+for (let s in student) {
+    console.log(s);
+}
+
+for (let s of student.sub) {
+    console.log(s);
+}
+
+for (let s in student.add) {
+    console.log(s);
+}
