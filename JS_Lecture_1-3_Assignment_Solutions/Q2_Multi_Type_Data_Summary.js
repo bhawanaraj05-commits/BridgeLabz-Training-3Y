@@ -1,11 +1,11 @@
 // Q2: Multi-Type Data Summary
 // Store examples of common JavaScript data types and show their types.
 
-const userName = "Alok";
+const userName = "Bhawana";
 const age = 20;
 const isStudent = true;
 const subjects = ["JavaScript", "HTML", "CSS"];
-const user = { name: "Alok", course: "B.Tech CSE" };
+const user = { name: "Bhawana", course: "B.Tech CSE" };
 const middleName = null;
 let optionalValue;
 
