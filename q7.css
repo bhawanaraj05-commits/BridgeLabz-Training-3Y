@@ -1,0 +1,14 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.list-group-item {
+  padding: 1rem 1.25rem;
+}
+
+.card {
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}

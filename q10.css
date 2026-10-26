@@ -1,0 +1,34 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.destination-img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.carousel-caption {
+  bottom: 20%;
+}
+
+.carousel-caption h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: bold;
+}
+
+.progress {
+  height: 25px;
+  border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+  .destination-img {
+    height: 300px;
+  }
+
+  .carousel-caption {
+    bottom: 5%;
+  }
+}

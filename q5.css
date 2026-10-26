@@ -1,0 +1,43 @@
+
+:root {
+  --bs-primary: #6d28d9;
+  --bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  background: #f8f7ff;
+}
+
+.site-header {
+  background: #312e81;
+}
+
+.theme-badge {
+  background: var(--bs-primary);
+}
+
+.theme-button {
+  background: var(--bs-primary);
+  color: white;
+}
+
+.theme-button:hover {
+  background: #4c1d95;
+  color: white;
+}
+
+.blog-card {
+  border: 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem #00000020;
+}
