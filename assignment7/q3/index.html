@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Step Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+
+    <div id="formArea">
+      <p id="stepInfo">Step 1 of 3</p>
+
+      <div class="step active">
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <p class="error"></p>
+      </div>
+
+      <div class="step">
+        <label for="emailInput">Email</label>
+        <input type="text" id="emailInput" placeholder="Enter your email">
+        <p class="error"></p>
+      </div>
+
+      <div class="step">
+        <label for="passwordInput">Password</label>
+        <input type="password" id="passwordInput" placeholder="At least 6 characters">
+        <p class="error"></p>
+      </div>
+
+      <div class="buttons">
+        <button id="backButton" disabled>Back</button>
+        <button id="nextButton">Next</button>
+      </div>
+    </div>
+
+    <div id="summary" class="hidden">
+      <h2>Summary</h2>
+      <p><strong>Name:</strong> <span id="summaryName"></span></p>
+      <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+      <p><strong>Password:</strong> <span id="summaryPassword"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

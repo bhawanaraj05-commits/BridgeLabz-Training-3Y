@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table Filter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Students</h1>
+    <input type="text" id="searchBox" placeholder="Search by name, branch or CGPA">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>CGPA</th>
+        </tr>
+      </thead>
+      <tbody id="studentBody">
+        <tr><td>Aarav Sharma</td><td>CSE</td><td>8.7</td></tr>
+        <tr><td>Priya Singh</td><td>ECE</td><td>9.1</td></tr>
+        <tr><td>Rohan Verma</td><td>Mechanical</td><td>7.8</td></tr>
+        <tr><td>Sneha Kumari</td><td>CSE</td><td>9.4</td></tr>
+        <tr><td>Amit Raj</td><td>Civil</td><td>7.2</td></tr>
+        <tr><td>Neha Gupta</td><td>IT</td><td>8.9</td></tr>
+        <tr><td>Vikash Kumar</td><td>ECE</td><td>8.1</td></tr>
+        <tr><td>Anjali Mishra</td><td>IT</td><td>8.5</td></tr>
+        <tr><td>Rahul Yadav</td><td>Mechanical</td><td>6.9</td></tr>
+        <tr><td>Pooja Jha</td><td>CSE</td><td>9.0</td></tr>
+      </tbody>
+    </table>
+
+    <p id="noResults" class="hidden">No results found</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

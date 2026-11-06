@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/id/10/300/200" data-large="https://picsum.photos/id/10/900/600" alt="Image 1">
+    <img src="https://picsum.photos/id/15/300/200" data-large="https://picsum.photos/id/15/900/600" alt="Image 2">
+    <img src="https://picsum.photos/id/20/300/200" data-large="https://picsum.photos/id/20/900/600" alt="Image 3">
+    <img src="https://picsum.photos/id/25/300/200" data-large="https://picsum.photos/id/25/900/600" alt="Image 4">
+    <img src="https://picsum.photos/id/30/300/200" data-large="https://picsum.photos/id/30/900/600" alt="Image 5">
+    <img src="https://picsum.photos/id/40/300/200" data-large="https://picsum.photos/id/40/900/600" alt="Image 6">
+  </div>
+
+  <div id="modal" class="modal">
+    <div id="modalContent" class="modal-content">
+      <img id="modalImage" src="" alt="Large preview">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
